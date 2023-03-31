@@ -178,3 +178,31 @@ addressBookArray.forEach((obj) => {
 //view person based on city or state
 let persons = addressBookArray.map((obj) => `${obj.city}, ${obj.firstName}`);
 console.log(persons);
+//count by state or city
+addressBookArray.push(
+  new AddressBookContact(
+    'kundan',
+    'chavan',
+    'Bihar',
+    'bangalore',
+    'karnataka',
+    123456,
+    9027364028,
+    'kun@dan'
+  )
+);
+addressBookArray.push(
+  new AddressBookContact(
+    'kundan',
+    'chavan',
+    'Bihar',
+    'bangalore',
+    'karnataka',
+    123456,
+    9027364028,
+    'kun@dan'
+  )
+);
+let cont = 0;
+let count1 = addressBookArray.filter((obj) => obj.city === 'bangalore').length;
+console.log(count1);
