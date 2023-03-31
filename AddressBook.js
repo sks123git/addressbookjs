@@ -98,10 +98,18 @@ let contacts = new AddressBookContact(
   9027364028,
   'shubh@am'
 );
-console.log(contacts.toString());
-try {
-  contacts.setFirstName('Kundan');
-} catch (error) {
-  console.log(error);
-}
-console.log(contacts.toString());
+let addressBookArray = new Array();
+addressBookArray.push(contacts);
+addressBookArray.push(
+  new AddressBookContact(
+    'kundan',
+    'chavan',
+    'Bihar',
+    'bangalore',
+    'karnataka',
+    123456,
+    9027364028,
+    'kun@dan'
+  )
+);
+addressBookArray.forEach((a) => console.log(a.toString()));
