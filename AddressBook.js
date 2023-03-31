@@ -159,3 +159,8 @@ if (objToDelete != undefined) {
 } else {
   console.log('Not found');
 }
+//find count of contacts in address book
+let count = addressBookArray.reduce(function count(c) {
+  return c + 1;
+}, 0);
+console.log(count);
