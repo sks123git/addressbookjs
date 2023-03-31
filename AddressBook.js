@@ -150,3 +150,12 @@ if (obj != undefined) {
 } else {
   console.log('Not found');
 }
+//delete contact person on basis of name
+let objToDelete = addressBookArray.find((a) => a.firstName === 'kundan');
+if (objToDelete != undefined) {
+  addressBookArray.pop();
+  console.log('Person found and record deleted');
+  addressBookArray.forEach((a) => console.log(a.toString()));
+} else {
+  console.log('Not found');
+}
