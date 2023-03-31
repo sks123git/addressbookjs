@@ -168,3 +168,10 @@ console.log(count);
 let newName = 'shubham';
 let bool = addressBookArray.find((obj) => obj.firstName === newName);
 console.log(bool);
+//check for person by particular city or state
+addressBookArray.forEach((obj) => {
+  if (obj.city === 'bangalore') console.log(obj.toString());
+});
+addressBookArray.forEach((obj) => {
+  if (obj.state === 'karnataka') console.log(obj.toString());
+});
