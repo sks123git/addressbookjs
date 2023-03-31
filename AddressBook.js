@@ -175,3 +175,6 @@ addressBookArray.forEach((obj) => {
 addressBookArray.forEach((obj) => {
   if (obj.state === 'karnataka') console.log(obj.toString());
 });
+//view person based on city or state
+let persons = addressBookArray.map((obj) => `${obj.city}, ${obj.firstName}`);
+console.log(persons);
