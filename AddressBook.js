@@ -164,3 +164,7 @@ let count = addressBookArray.reduce(function count(c) {
   return c + 1;
 }, 0);
 console.log(count);
+//check for duplicate entry
+let newName = 'shubham';
+let bool = addressBookArray.find((obj) => obj.firstName === newName);
+console.log(bool);
